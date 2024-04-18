@@ -57,3 +57,35 @@ Para iniciar a API, execute o seguinte comando:
 ### Gerenciamento do Banco de Dados
 
 O banco de dados SQLITE será automaticamente criado durante a primeira execução da aplicação. Caso haja a necessidade de carregar dados de exemplo, execute o script `CARGA.PY` encontrado na pasta model. Isso populacionará o banco de dados com informações iniciais necessárias para o uso da aplicação.
+
+---
+## Endpoints eleitos para avaliação da disciplina Full Stack Básico - Sprint 01
+
+Estes três endpoints são utilizados na aplicação chamados através do frontend.
+
+### GET /blocos
+
+Endpoint GET para buscar todos os Blocos Padrão com suas respectivas tarefas padrão cadastrados.
+
+### POST /tarefa_tipo
+
+Endpoint POST para adicionar um novo tipo de tarefa na base de dados.
+
+### DELETE /tarefa_tipo_id
+
+Endpoint DELETE para deletar um tipo de tarefa específico por ID.
+
+## Demais Endpoints Utilizados na Aplicação 
+
+Estes endpoints abaixo são utilizados na aplicação (chamados através do frontend).
+
+- POST /tarefa_tipo_alteracao
+- GET /listar_tipo_tarefa
+- DELETE /apagar_bloco_padrao
+
+## Demais Endpoints não utilizados na aplicação
+
+Estes endpoints abaixo não são utilizados na aplicação, foram criados durante o desenvolvimento mas não houve tempo de incluir a sua chamada pelo front end.
+
+- POST /bloco
+- DELETE /tarefa_tipo_descricao
