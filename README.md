@@ -58,6 +58,17 @@ Para iniciar a API, execute o seguinte comando:
 
 O banco de dados SQLITE será automaticamente criado durante a primeira execução da aplicação. Caso haja a necessidade de carregar dados de exemplo, execute o script `CARGA.PY` encontrado na pasta model. Isso populacionará o banco de dados com informações iniciais necessárias para o uso da aplicação.
 
+O sistema utiliza três tabelas:
+
+- TAREFA_TIPO
+  - Tabela mãe de TAREFA_PADRAO (1:N)  - 
+- BLOCO_PADRAO
+  - Tabela mãe de TAREFA_PADRAO (1:N)
+- TAREFA_PADRAO
+  - Tabela filha de BLOCO_PADRAO (N:1) - Uma tarefa padrão pode ser inserida várias vezes para um mesmo bloco)
+  - Tabela filha de TAREFA_TIPO (N:1) - Uma tarefa padrão podeser inserida várias vezes para uma mesma tarefa_tipo)
+
+
 ---
 ## Endpoints eleitos para avaliação da disciplina Full Stack Básico - Sprint 01
 
