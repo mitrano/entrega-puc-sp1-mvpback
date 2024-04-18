@@ -26,32 +26,34 @@ Tecnologias Utilizadas
 ---
 ## Como executar 
 
+Para garantir a correta execução deste projeto, é essencial a instalação de todas as bibliotecas Python especificadas no arquivo `requirements.txt`. Após realizar o clone do repositório, por favor, acesse o diretório principal através do terminal para proceder com as seguintes configurações:
 
-Será necessário ter todas as libs python listadas no `requirements.txt` instaladas.
-Após clonar o repositório, é necessário ir ao diretório raiz, pelo terminal, para poder executar os comandos descritos abaixo.
+### Configuração do Ambiente Virtual
 
-> É fortemente indicado o uso de ambientes virtuais do tipo [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html).
+Primeiramente, é necessário criar um ambiente virtual para o projeto, o que pode ser feito através do comando:
 
-```
-(env)$ pip install -r requirements.txt
-```
-
-Este comando instala as dependências/bibliotecas, descritas no arquivo `requirements.txt`.
-
-Para executar a API  basta executar:
-
-```
-(env)$ flask run --host 0.0.0.0 --port 5000
+```comando
+python -m venv ambvir
 ```
 
-Em modo de desenvolvimento é recomendado executar utilizando o parâmetro reload, que reiniciará o servidor
-automaticamente após uma mudança no código fonte. 
+### Instalação das Dependências
+
+Após a ativação do ambiente virtual, instale os pacotes necessários que estão listados no `requirements.txt` usando o comando:
 
 ```
-(env)$ flask run --host 0.0.0.0 --port 5000 --reload
+(ambvir)$ pip install -r requirements.txt
 ```
 
-## Banco de Dados
+Este comando assegura que todas as dependências necessárias para a execução do projeto sejam instaladas conforme definido no arquivo mencionado.
 
-O banco de dados será criado na primeira execução.
-Caso deseje realizar uma carga de dados de exemplo, deve-se executar o script python CARGA.PY que está na pasta model.
+### Execução da API
+
+Para iniciar a API, execute o seguinte comando:
+
+```
+(ambvir)$ flask run --host 0.0.0.0 --port 5000 --reload
+```
+
+### Gerenciamento do Banco de Dados
+
+O banco de dados SQLITE será automaticamente criado durante a primeira execução da aplicação. Caso haja a necessidade de carregar dados de exemplo, execute o script `CARGA.PY` encontrado na pasta model. Isso populacionará o banco de dados com informações iniciais necessárias para o uso da aplicação.
