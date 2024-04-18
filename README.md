@@ -1,23 +1,23 @@
 # API Daily Plan
 
-**Descrição do Sistema de Gerenciamento de Tarefas e Blocos Padrão**
+## Descrição do Sistema de Gerenciamento de Tarefas e Blocos Padrão
 
-Visão Geral do Sistema
+### Visão Geral do Sistema
 
 O sistema é projetado para oferecer uma solução de gerenciamento de tarefas e blocos padrão, ideal para pessoas que buscam otimizar a alocação de seu tempo diário (as 24 horas do dia). O foco principal é permitir que os usuários criem, gerenciem e monitorem tarefas agrupadas em blocos padrão, com aplicação em diversos cenários de atividade da vida das pessoas.
 
-Objetivos de Negócio
+### Objetivos de Negócio
 
 - Melhoria da Eficácia Operacional: Automatizar o planejamento de tarefas repetitivas e rotineiras para reduzir o tempo de setup e evitar que a pessoa se perca durante o dia em tarefas não planejadas e dispersantes.
 - Flexibilidade na Gestão de Tarefas: Facilitar a customização e ajustes de tarefas e blocos de trabalho conforme necessidades específicas da pessoa.
 - Visibilidade Aprimorada: Prover relatórios detalhados e visualizações claras das atividades planejadas e sua execução, ajudando na tomada de decisão e na melhoria contínua das atividades diárias (sem funcionalidades ainda disponíveis nesta primeira versão).
 
-Características Principais
+### Características Principais
 
 - Gestão de Tarefas e Blocos Padrão: Criação e gerenciamento de tarefas individuais e agrupamento delas em blocos padrão, cada um podendo ser configurado para ocorrer em dias específicos da semana.
 - Relatórios com as tarefas mais executadas e a transparência da diferença entre o planejado e executado.
 
-Tecnologias Utilizadas
+### Tecnologias Utilizadas
 
 - Python e Pydantic: O backend é construído em Python, utilizando a biblioteca Pydantic para a validação de dados e definição de esquemas, garantindo que as informações manipuladas estejam corretas e sejam fáceis de integrar com outras plataformas.
 - SQLAlchemy: Utilizado para ORM (Object-Relational Mapping), facilitando a manipulação e consulta de dados em bancos de dados SQL, proporcionando escalabilidade e segurança nas operações de dados.
